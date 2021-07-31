@@ -13,6 +13,7 @@ const { auth } = require('./middleware/auth');
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+
 app.post('/api/user', (req, res) => {
     const user = new User({
         email: req.body.email,
